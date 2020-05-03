@@ -17,14 +17,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".Home_Activity">
-            <intent-filter>
-                <action android:name="com.erasmushelper.Home_Activity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+        <intent-filter>
+            <action android:name="com.erasmushelper.Home_Activity"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
         </activity>
         <activity android:name=".GenovaActivity">
             <intent-filter>
                 <action android:name="com.erasmushelper.GenovaActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="com.erasmushelper.RegisterActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
