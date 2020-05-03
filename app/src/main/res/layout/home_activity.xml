@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/banner_bg"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="HOME"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    //Content
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+            <Button
+                android:id="@+id/buttonA"
+                android:background="@drawable/rounded_button"
+                android:text="GENOVA"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/></RelativeLayout>
+
+        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+            <Button
+                android:id="@+id/buttonB"
+                android:background="@drawable/rounded_button"
+                android:text="UNIGE"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/></RelativeLayout>
+
+        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+            <Button
+                android:id="@+id/buttonC"
+                android:background="@drawable/rounded_button"
+                android:text="EXPERIENCES"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/></RelativeLayout>
+
+        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+            <Button
+                android:id="@+id/buttonD"
+                android:background="@drawable/rounded_button"
+                android:text="HOUSING"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2">
+            <Button
+                android:id="@+id/buttonE"
+                android:background="@drawable/rounded_button"
+                android:text="FINDER"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/></RelativeLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
