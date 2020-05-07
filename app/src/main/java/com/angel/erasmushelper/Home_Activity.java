@@ -34,6 +34,14 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
+        bttnStartExp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent("com.erasmushelper.ExperienceActivity");
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
