@@ -6,102 +6,189 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#fff">
 
     <RelativeLayout
+        android:layout_weight=".13"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="@drawable/banner_bg"
-        android:gravity="center_horizontal|center_vertical">
+        android:layout_height="0dp"
+        android:background="@drawable/banner_bg">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:autoSizeMaxTextSize="35sp"
+            android:autoSizeMinTextSize="30sp"
+            android:autoSizeTextType="uniform"
+            android:textSize="25sp"
             android:text="HOME"
             android:textColor="@android:color/white" />
     </RelativeLayout>
 
-    //Content
-    <GridLayout
+
+    <LinearLayout
+        android:layout_weight=".87"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical|center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:alignmentMode="alignMargins"
-        android:columnCount="2"
-        android:rowCount="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_margin="10dp"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="15dp">
 
-        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-            <Button
+                <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:id="@+id/buttonA"
-                android:background="@drawable/rounded_button"
-                android:text="GENOVA"
-                android:textColor="@android:color/white"
-                android:textSize="30dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/></RelativeLayout>
+                android:background="#ffffff"
+                android:src="@drawable/rounded_button"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:autoSizeMaxTextSize="31sp"
+                    android:autoSizeMinTextSize="22sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="22sp"
+                    android:text="GENOVA"
+                    android:textColor="#fff" />
+            </FrameLayout>
 
-        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-            <Button
-                android:id="@+id/buttonB"
-                android:background="@drawable/rounded_button"
-                android:text="UNIGE"
-                android:textColor="@android:color/white"
-                android:textSize="30dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/></RelativeLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="15dp">
 
-        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-            <Button
-                android:id="@+id/buttonC"
-                android:background="@drawable/rounded_button"
-                android:text="EXPERIENCES"
-                android:textColor="@android:color/white"
-                android:textSize="20dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/></RelativeLayout>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonB"
+                    android:background="#ffffff"
+                    android:src="@drawable/rounded_button"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:autoSizeMaxTextSize="31sp"
+                    android:autoSizeMinTextSize="25sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="25sp"
+                    android:text="UNIGE"
+                    android:textColor="#fff" /></FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="15dp">
 
-        <RelativeLayout android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-            <Button
-                android:id="@+id/buttonD"
-                android:background="@drawable/rounded_button"
-                android:text="HOUSING"
-                android:textColor="@android:color/white"
-                android:textSize="30dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/></RelativeLayout>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonC"
+                    android:background="#ffffff"
+                    android:src="@drawable/rounded_button"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitCenter" />
 
-        <RelativeLayout
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_columnSpan="2">
-            <Button
-                android:id="@+id/buttonE"
-                android:background="@drawable/rounded_button"
-                android:text="FINDER"
-                android:textColor="@android:color/white"
-                android:textSize="30dp"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/></RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:autoSizeMaxTextSize="20sp"
+                    android:autoSizeMinTextSize="15sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="15sp"
+                    android:text="EXPERIENCES"
+                    android:textColor="#fff" /></FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="15dp">
 
-    </GridLayout>
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonD"
+                    android:background="#ffffff"
+                    android:src="@drawable/rounded_button"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitCenter" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:autoSizeMaxTextSize="28sp"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="20sp"
+                    android:text="HOUSING"
+                    android:textColor="#fff" /></FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonE"
+                    android:background="#ffffff"
+                    android:src="@drawable/rounded_button"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:autoSizeMaxTextSize="31sp"
+                    android:autoSizeMinTextSize="25sp"
+                    android:autoSizeTextType="uniform"
+                    android:textSize="25sp"
+                    android:text="FINDER"
+                    android:textColor="#fff" /></FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

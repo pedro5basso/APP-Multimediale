@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".GenovaActivity"
+    tools:context=".UnigeActivity"
     android:background="#fff">
 
     <RelativeLayout
@@ -24,7 +24,7 @@
             android:autoSizeMinTextSize="30sp"
             android:autoSizeTextType="uniform"
             android:textSize="25sp"
-            android:text="GENOVA"
+            android:text="UNIGE"
             android:textColor="@android:color/white" />
     </RelativeLayout>
 
@@ -34,7 +34,7 @@
         android:layout_weight=".87">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:autoSizeMaxTextSize="40sp"
                 android:autoSizeMinTextSize="20sp"
                 android:autoSizeTextType="uniform"
-                android:text="City of Genoa"
+                android:text="University of Genoa"
                 android:textColor="#045FB4"
                 android:textSize="25sp"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -57,7 +57,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="20dp"
-                android:text="Genoa is the capital of the Italian region of Liguria and the sixth-largest city in Italy. In 2015, 594,733 people lived within the city's administrative limits. As of the 2011 Italian census, the Province of Genoa, which in 2015 became the Metropolitan City of Genoa, counted 855,834 resident persons living in the city."
+                android:text="The University of Genoa, known also with the acronym UniGe (Italian: Università di Genova), is one of the largest universities in Italy. It is located in the city of Genoa and regional Metropolitan City of Genoa, on the Italian Riviera in the Liguria region of northwestern Italy. The original university was founded in 1481."
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 app:layout_constraintBottom_toTopOf="@id/img"
@@ -78,14 +78,14 @@
                     android:layout_width="0dp"
                     android:layout_height="110dp"
                     android:layout_weight=".50"
-                    android:src="@drawable/genova" />
+                    android:src="@drawable/unige" />
 
                 <me.biubiubiu.justifytext.library.JustifyTextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_weight=".50"
-                    android:text="Over 1.5 million people live in the wider metropolitan area stretching along the Italian Riviera. Here people from a lot of cultures lives together"
+                    android:text="The University of Genoa has high-ranking positions among the European universities in multiple computer science fields. It has high-ranking positions among the European universities in multiple computer science fields"
                     android:textColor="@android:color/black"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -97,21 +97,40 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="20dp"
-                android:text="Located on the Gulf of Genoa in the Ligurian Sea, Genoa has historically been one of the most important ports on the Mediterranean: it is currently the busiest in Italy and in the Mediterranean Sea and twelfth-busiest in the European Union. Genoa has been nicknamed la Superba (the proud one) due to its glorious past and impressive landmarks. You will fall in love with the city"
+                android:text="The University of Genoa offers over 120 degree courses in 11 fields of study distributed over 6 different cities. Many courses and teaching units are taught in foreign language, mainly in English. Students may find here great opportunities, competitive undergraduate and graduate programmes and academic excellence. You will be so confortable here! "
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 app:layout_constraintTop_toBottomOf="@id/img" />
 
-            <ImageView
-                android:id="@+id/camogliimg"
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/camogli"
-                app:layout_constraintTop_toBottomOf="@id/text2" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/text2"
+               android:orientation="horizontal"
+               android:paddingStart="20dp"
+               android:paddingTop="10dp"
+               android:paddingEnd="20dp"
+               android:paddingBottom="20dp">
+               <Button
+                   android:id="@+id/FindCourseBttn"
+                   android:layout_weight=".40"
+                   android:layout_width="0dp"
+                   android:layout_height="70dp"
+                   android:background="@drawable/unige_buttons"
+                   android:text="FIND YOUR COURSE"
+                   android:textColor="#fff"/>
+               <Button
+                   android:id="@+id/ApplyBttn"
+                   android:layout_weight=".40"
+                   android:layout_width="0dp"
+                   android:layout_height="70dp"
+                   android:layout_marginLeft="20dp"
+                   android:background="@drawable/unige_buttons"
+                   android:text="APPLY FORM"
+                   android:textAlignment="center"
+                   android:textColor="#fff"
+                   android:gravity="center_horizontal|center_vertical" />
+           </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

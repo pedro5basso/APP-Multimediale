@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Home_Activity extends AppCompatActivity {
 
     String TAG="MainActivity";
-    Button bttnStartGenova, bttnStartUnige, bttnStartExp, bttnStartHousing, bttnStartFinder;
+    ImageButton bttnStartGenova, bttnStartUnige, bttnStartExp, bttnStartHousing, bttnStartFinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,14 @@ public class Home_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent intent = new Intent("com.erasmushelper.ExperienceActivity");
+                startActivity(intent);
+            }
+        });
+
+        bttnStartUnige.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.erasmushelper.UnigeActivity");
                 startActivity(intent);
             }
         });
