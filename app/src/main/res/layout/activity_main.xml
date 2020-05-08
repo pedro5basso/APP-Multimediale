@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:background="@drawable/banner_bg"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@drawable/banner_bg"
+        android:background="@drawable/banner_bg_white"
         android:gravity="center_horizontal|center_vertical">
 
         <TextView
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:textSize="40dp"
         android:text="Main Activity"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/black" />
 
     </RelativeLayout>
     <Button
@@ -35,6 +35,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register/Login"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/BttnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
         android:textSize="30dp"
         android:layout_marginTop="80dp"/>
 </LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/banner_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdminActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/banner_bg_white"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="ADMIN"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etSearchUsername"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:hint="username"
+            android:inputType="text">
+
+        </EditText>
+        <Button
+            android:id="@+id/bttSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:hint="username">
+
+        </EditText>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:hint="email">
+
+        </EditText>
+        <EditText
+            android:id="@+id/etPawssord"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:hint="password">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/bttRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh">
+
+        </Button>
+        <Button
+            android:id="@+id/bttDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/bttShowdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Database" ></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/lvListDataBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/banner_bg_white">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
